@@ -71,14 +71,17 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-wrap gap-4">
-            <motion.button
+            <motion.a
+              href="https://drive.google.com/file/d/1giXALFShmXuOlgapyuZuts0sB0Sx3ea_/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-10 py-4 bg-primary text-white rounded-full font-bold flex items-center gap-2 shadow-lg shadow-primary/30 transition-all hover:brightness-110"
             >
               <FiDownload size={20} />
               DOWNLOAD CV
-            </motion.button>
+            </motion.a>
             <div className="flex gap-3">
               {[
                 { Icon: FaGithub, href: "https://github.com/kamrul2515" },

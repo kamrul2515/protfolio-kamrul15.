@@ -8,8 +8,7 @@ import {
   SiTailwindcss, 
   SiJavascript, 
   SiReact, 
-  SiNextdotjs,
-  SiMongodb
+  SiNextdotjs
 } from "react-icons/si";
 
 const skills = [
@@ -18,7 +17,7 @@ const skills = [
   { name: "Tailwind", icon: SiTailwindcss, color: "#06B6D4", delay: 0.3 },
   { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E", delay: 0.4 },
   { name: "React.js", icon: SiReact, color: "#61DAFB", delay: 0.5 },
-  { name: "MongoDB", icon: SiMongodb, color: "#47A248", delay: 0.6 },
+  { name: "Next.js", icon: SiNextdotjs, color: "#FFFFFF", delay: 0.6 },
 ];
 
 const TechArsenal = () => {
@@ -55,7 +54,7 @@ const TechArsenal = () => {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-12">
+        <div className="flex flex-wrap justify-center gap-8 md:gap-12 max-w-5xl mx-auto">
           {skills.map((skill, i) => (
             <motion.div
               key={i}
